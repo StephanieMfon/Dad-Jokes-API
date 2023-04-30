@@ -1,9 +1,9 @@
-const getRandomDadJokeController = require('./../controllers/dadjokes.controller')
+const getRandomDadJokeController = require("./../controllers/dadjokes.controller");
 
-const express = require('express')
-const router = express.Router()
+const express = require("express");
+const router = express.Router();
 
 // Handle get request for dad-jokes
-router.get('/dad-jokes', getRandomDadJokeController)
+router.get("/dad-jokes", getRandomDadJokeController);
 
-module.exports = router
+module.exports = router;
