@@ -3,8 +3,9 @@ const express = require("express");
 // Start express app
 const app = express();
 const router = require("./src/routes/dadjokes.routes");
+
 app.use(countNumberOfJokesRead);
-app.use("/api/v1", router);
+app.use("/api/v1/dad-jokes", router);
 
 // Error Handling middleware
 app.use((err, req, res, next) => {
